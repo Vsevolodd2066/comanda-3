@@ -1,0 +1,8 @@
+#1 cet
+Steak = Item(steak, 1, 1, 0, 0, 2, "none")
+Ale = Item(ale, 2, 1, 2, 0, 0, "none")
+Broccoli = Item(broccoli, 3, 1, 0, 2, 0, "none")
+#2 cet
+Heal = Item(heal, 4, 2, 0, 0, 5, "none")
+Damage = Item(damage, 5, 2, 5, 0, 0, "none")
+Armor = Item(armor, 6, 2, 0, 5, 0,"none")
