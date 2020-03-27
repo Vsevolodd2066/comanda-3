@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <img src="https://vignette.wikia.nocookie.net/stronghold/images/3/32/Рыцарь.png/revision/latest/top-crop/width/360/height/450?cb=20130205131714&path-prefix=ru" alt="">
+
+    <h3>{{user.username}}</h3>
+    <h5>&#128526;Здоровье - {{user.hp}}</h5>
+    <h5>&#9752;Очки опыта- {{user.xp}}</h5>
+    <h5>&#9763;Урон - {{user.damage}}</h5>
+    <h5>&#10031;Уровень - {{user.level}}</h5>
+    <h5>&#36;Деньги - {{user.money}}</h5>
+    <h5>&#9762;Броня - {{user.armor}}</h5>
+
+{% endblock %}

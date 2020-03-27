@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>{{monster.name}}</h3>
+    <h5>&#128526;Здоровье - {{monster.hp}}</h5>
+    <h5>&#9763;Урон - {{monster.damage}}</h5>
+    <h5>&#10031;Уровень - {{monster.level}}</h5>
+    <h5>&#36;Деньги - {{monster.money}}</h5>
+    <h5>&#9762;Броня - {{monster.armor}}</h5>
+    <h5>Картинка - {{monster.picture}}
+
+{% endblock %}
