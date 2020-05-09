@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+            body {
+                background-image: url(https://luxfon.com/images/201203/luxfon.com_1193.jpg);
+                }       
+            </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <img src="https://vignette.wikia.nocookie.net/stronghold/images/3/32/Рыцарь.png/revision/latest/top-crop/width/360/height/450?cb=20130205131714&path-prefix=ru" alt="" height="675px" width="540px">
+            </div>
+            <div class="col-6">
+                <h3><font size = "24">{{user.username}}</h3></font>
+                <br>
+                <h5><font size = "24">&#9760;Здоровье - {{user.hp}}</h5></font>
+                <h5><font size = "24">&#9752;Очки опыта - {{user.xp}}</h5></font>
+                <h5><font size = "24">&#9763;Урон - {{user.damage}}</h5></font>
+                <h5><font size = "24">&#10031;Уровень - {{user.level}}</h5></font>
+                <h5><font size = "24">&#36;Деньги - {{user.money}}</h5></font>
+                <h5><font size = "24">&#9762;Броня - {{user.armor}}</h5></font>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<html>
+    <style>
+            body {
+                background-image: url(https://luxfon.com/images/201203/luxfon.com_1193.jpg);
+                }       
+            </style>
+    <head>
+        <div class="container">
+    	   <h1><font size = "30">Привет, {{ current_user.username }}!</h1><br>
+            <h3><font size = "24">Ты находишься в Mortal Arena. Твоя задача - прокачка себя и уничтожение злобных монстров, населяющих окрестности. Иди вперёд к победам и славе!!!</h3>
+        </div>
+    </head>
+    {% for post in posts %}
+        <div class="alert alert-primary" role="alert">
+		<p>{{ post.author.username }} says: <b>{{ post.body }}</b></p>
+            
+        </div>
+</html>
+
+    {% endfor %}
+{% endblock %}

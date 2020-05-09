@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <img src="https://memepedia.ru/wp-content/uploads/2018/02/image.jpg" alt="">
+        
+        <form action="" method="post" novalidate>
+            {{ form.hidden_tag() }}
+            <p>{{ form.submit() }}</p>
+        </form>
+{% endblock %}

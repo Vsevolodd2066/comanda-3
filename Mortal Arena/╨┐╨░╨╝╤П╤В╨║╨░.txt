@@ -1,0 +1,27 @@
+Алгоритм добавления новой страницы:
+
+1) В файле routes.py добавить роут:
+	> адрес страницы
+	> использ-е методы: GET,POST
+	> возвращает шаблон
+
+2) Добавить Шаблон в templates
+	> состоит из блока content
+		{% block content %}
+			...
+		{% endblock %}
+	> дизайн нa bootstrap
+		<div class='...'>
+
+3) Если работа с базой данных
+		post = Post(данные)
+        db.session.add(post)
+        db.session.commit()
+
+Настройка:
+# flask db init 
+# flask db migrate
+# flask db upgrade
+# flask run
+
+перед запуском - cd Папка1/Папка2/project
