@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<img src="https://vignette.wikia.nocookie.net/atom-rpg/images/f/f4/Harbor_H1.png/revision/latest/scale-to-width-down/340?cb=20190215141918&path-prefix=ru" alt="">
+
+    
+    <form action="/trader/heal" method="POST">
+        <input type="submit" class="btn btn-dark" value="Лечиться">
+    </form>
+
+    <form action="/trader/damage" method="POST">
+        <input type="submit" class="btn btn-dark" value="Увеличить урон">
+    </form>
+
+{% endblock %}

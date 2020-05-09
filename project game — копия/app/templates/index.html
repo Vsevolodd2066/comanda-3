@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+    	<h1>Hi, {{ current_user.username }}!</h1><br>
+        <h3>Ты находишься в Mortal Arena.Твоя задача - прокачка себя и уничтожение злобных монстров, населяющих окрестности. Иди вперёд к победам и славе!!!</h3>
+    </div>
+    {% for post in posts %}
+    <div class="alert alert-primary" role="alert">
+		<p>{{ post.author.username }} says: <b>{{ post.body }}</b></p>
+    </div>
+    {% endfor %}
+    <img src="{{ url_for('static', filename='bg.jpg') }}" alt="">
+    <button type="button" class="btn btn-primary">Primary</button>
+{% endblock %}

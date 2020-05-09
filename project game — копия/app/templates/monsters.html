@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+			<div>
+        		{% for m in monsters %}
+                    <div class="card" style="width: 18rem;">
+                      <img src="{{ m.picture }}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">{{ m.username }}</h5>
+                        <a href="/monster/{{ m.id }}" class="btn btn-primary">Перейти</a>
+                      </div>
+                    </div>
+                {% endfor %}
+        	</div>
+        </div>
+    </div>	
+{% endblock %}
