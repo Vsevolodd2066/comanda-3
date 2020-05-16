@@ -166,6 +166,21 @@ def monsters():
     print(monsters)    
     return render_template('monsters.html')
 
+@app.route('/altar')
+@login_required
+def altar():
+    return render_template('altar.html')
+@app.route('/altar/inc_level', methods=['POST'])
+@login_required
+def inc_level():
+    if (current_user.xp) > (current_user.level)*10:
+        current_user.xp -=  ()*10
+        current_user.level += 1
+        current_user.hp += 5*current_user.level
+        current_user.damage += 2*current_user.level
+        db.session.commit()
+    return redirect('/altar')
+
 # flask db init 
 # flask db migrate
 # flask db upgrade
