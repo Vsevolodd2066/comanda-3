@@ -1,12 +1,19 @@
 {% extends "base.html" %}
 
 {% block content %}
+<style>
+            body {
+                background-image: url(https://images.wallpaperscraft.com/image/silhouette_altar_rune_138457_2560x1440.jpg);
+                background-size: cover;
+                }       
+            </style>
 <head>
 	<div class="container">
-            <h3><font size = "24" color="black">Ты предстаешь перед древним алтарем.Тут ты можешь усилить тело и дух за счет опыта обретённого в битвах</h3>
+            <h3><br><br><br><br><br><br><br><br><br><br><font size = "24" color="black">Ты предстаешь перед древним алтарем.<br>Тут ты можешь усилить тело и дух за<br>счет опыта, обретённого в битвах</h3>
+            	<br><br><br><br><br>
         </div>
     </head>
     <form action="/altar/inc_level" method="POST">
-        <input type="submit" class="btn btn-dark" value="Принести дар" size="10">
+        <input type="submit" class="btn btn-dark btn-block" value="Принести дар">
     </form>
 {% endblock %}

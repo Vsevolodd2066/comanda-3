@@ -1,12 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-	<h3>{{monster.username}}</h3>
-    <h5>&#128526;Здоровье - {{monster.hp}}</h5>
-    <h5>&#9763;Урон - {{monster.damage}}</h5>
-    <h5>&#10031;Уровень - {{monster.level}}</h5>
-    <h5>&#36;Деньги - {{monster.money}}</h5>
-    <h5>&#9762;Броня - {{monster.armor}}</h5>
+<style>
+            body {
+                background-image: url(https://s1.1zoom.ru/b5050/385/Horses_Middle_Ages_464834_2560x1440.jpg);
+                background-size: cover
+                }       
+            </style>
+	<h3><font size = "24" color="white">{{monster.username}}</font></h3>
+    <h5><font size = "24" color="white">&#128526;Здоровье - {{monster.hp}}</font></h5>
+    <h5><font size = "24" color="white">&#9763;Урон - {{monster.damage}}</font></h5>
+    <h5><font size = "24" color="white">&#10031;Уровень - {{monster.level}}</font></h5>
+    <h5><font size = "24" color="white">&#36;Деньги - {{monster.money}}</font></h5>
+    <h5><font size = "24" color="white">&#9762;Броня - {{monster.armor}}</font></h5>
     <img src="{{monster.picture}}" height="400px" alt="">
 
    	<form action="" method="post" novalidate>

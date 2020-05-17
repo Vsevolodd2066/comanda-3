@@ -3,22 +3,24 @@
 {% block content %}
 <head>
 	<div class="container">
-            <h3><font size = "24" color="white">Ты находишься у торговца. Здесь можно повысить свой урон и здоровье за деньги.</h3>
+            <h3><br><br><br><font size = "24" color="white">Ты находишься у торговца. Здесь можно повысить свой урон и здоровье за деньги.</h3>
         </div>
     </head>
 <style>
             body {
                 background-image: url(https://i.pinimg.com/originals/5d/bc/28/5dbc2887c54910358ea3d7cfe30568fb.jpg);
+                background-size: cover
                 }       
             </style>
+            <br><br><br><br><br><br><br>
     <form action="/trader/heal" method="POST">
-        <input type="submit" class="btn btn-dark" value="Лечиться" size="10">
+        <input type="submit" class="btn btn-dark btn-block" value="Лечиться">
     </form>
 
     <form action="/trader/damage" method="POST">
-        <input type="submit" class="btn btn-dark" value="Увеличить урон" size="10">
+        <input type="submit" class="btn btn-dark btn-block" value="Увеличить урон">
     </form>
         <form action="/trader/damage" method="POST">
-        <input type="submit" class="btn btn-dark" value="Зачаровать броню" size="10">
+        <input type="submit" class="btn btn-dark btn-block" value="Зачаровать броню">	
     </form>
 {% endblock %}
