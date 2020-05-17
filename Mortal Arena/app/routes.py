@@ -159,12 +159,21 @@ def inc_damage():
         current_user.damage += 5
         db.session.commit()
     return redirect('/trader')
+@app.route('/trader/armor', methods=['POST'])
+@login_required
+def inc_armor():
+    if current_user.money >= 5:
+        current_user.money-=5
+        current_user.armor += 1
+        db.session.commit()
+    return redirect('/trader')
+
 @app.route('/monsters')
 @login_required
 def monsters():
     monsters = Monster.query.all()
     print(monsters)    
-    return render_template('monsters.html')
+    return render_template('monsters.html',monsters=monsters)
 
 @app.route('/altar')
 @login_required
